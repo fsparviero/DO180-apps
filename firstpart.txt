@@ -1,0 +1,76 @@
+    1  exit
+    2  ps -ef 
+    3  ps -ef | grep dnf
+    4  exit
+    5  oc version
+    6  podman --version
+    7  df -h
+    8  sudo growpart /dev/vda 3
+    9  sudo xfs_growfs /
+   10  df -h
+   11  lab-configure
+   12  exit
+   13  exit
+   14  ssh classroom
+   15  exit
+   16  lab openshift-resoirces start
+   17  lab openshift-resoirces finish
+   18  lab openshift-resoirces end
+   19  lab-configure
+   20  git config --global credential.helper cache
+   21   git clone https://github.com/fsparviero/DO180-apps
+   22  git status
+   23  $cd DO180-apps
+   24  cd DO180-apps/
+   25  git status
+   26  git checkout -b testbranch
+   27  echo "DO180" > TEST
+   28  git add
+   29  git add .
+   30  git commit -m "DO180"
+   31  git push --set-upstream origin testbranch
+   32  2Yu2tw
+   33  git config --global credential.helper store
+   34  git pull
+   35  vim ~/.gitconfig
+   36  exit
+   37  git pull
+   38  git push --set-upstream origin testbranch
+   39  cd DO180-apps/
+   40  git status
+   41  git push --set-upstream origin testbranch
+   42  git pull
+   43  git pull --set-upstream origin testbranch
+   44  git push --set-upstream origin testbranch
+   45  head README.MD
+   46  head README.md
+   47  lab openshift-resources start
+   48  source /usr/local/etc/ocp4.config
+   49  oc login -u $RHT_OCP4_DEV_USER -p RHT_OCP4_DEV_PASSWORD $RHT_OCP4_MASTER_API
+   50  oc new-project ${RHT_OCP4_DEV_USER} -mysql-openshift
+   51  oc new-project ${RHT_OCP4_DEV_USER}-mysql-openshift
+   52  oc get all
+   53  clear
+   54  oc new-app --template=mysql-persistent -p MYSQL_USER=user1 -p MYSQL_PASSWORD=mypa55 -p MYSQL_DATABASE=testdb -p MYSQL_ROOT_PASSWORD=r00tpa55 -p VOLUME_CAPACITY=10Gi
+   55  oc status
+   56  clear
+   57  oc get all
+   58  oc status 
+   59  oc get pods
+   60  oc describe pod mysql-1-69lrq 
+   61  oc get svr
+   62  oc get svr mysql
+   63  oc get pods
+   64  oc get svc
+   65  oc describe svc mysql
+   66  clear
+   67  oc get pvc
+   68  oc describe pvc/mysql
+   69  oc port-forward mysql-1-69lrq 3306:3306
+   70  mysql -uuser1 -pmypa55 --protocol=tcp -h locahost
+   71  mysql -uuser1 -pmypa55 --protocol=tcp -h localhost
+   72  oc delete project zasvsf-mysql-openshift 
+   73  oc status
+   74  lab openshift-resources finish
+   75  history
+   76  history >> firstpart.txt
